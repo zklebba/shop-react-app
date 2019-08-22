@@ -1,0 +1,11 @@
+const ADD = 'BASKET/ADD';
+const CHANGE_QUANTITY = 'BASKET/CHANGE_QUANTITY';
+const REMOVE = 'BASKET/REMOVE';
+const RESET = 'BASKET/RESET';
+
+export default {
+    ADD,
+    CHANGE_QUANTITY,
+    REMOVE,
+    RESET,
+}

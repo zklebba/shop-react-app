@@ -1,0 +1,30 @@
+#root, #basket-toolbar {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+
+  input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+  }
+
+  .markdown-content {
+    a {
+      color: #0074f5;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
